@@ -1,0 +1,18 @@
+https://www.lambdatest.com/support/docs/ruby-with-capybara-running-automation-scripts-on-lambdatest-selenium-grid/
+
+you need env vars
+
+set LT_USERNAME=<LT-username> &&
+set LT_APIKEY=<LT-access-key> 
+
+
+to test localhost
+download lambdaTunnel 
+.\LT -user $LT_USERNAME -key $LT_APIKEY -cui
+
+to make sure that test pass or fail appropriately in lambdatest 
+
+driver.executeScript(‘lambda-status=failed’)
+1
+	
+driver.executeScript(‘lambda-status=failed’)
